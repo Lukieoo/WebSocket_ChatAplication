@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@android:color/background_light"
+    android:layout_height="match_parent">
+
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:pulse_color="@color/colorAccent"
+        app:pulse_count="4"
+        app:pulse_duration="1800"
+        app:pulse_interpolator="Linear"
+        app:pulse_repeat="0"
+        app:pulse_startFromScratch="false">
+        <ImageView
+            android:id="@+id/join"
+            android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+            android:src="@drawable/chat"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:textColor="@android:color/background_light"
+            android:text="Press to join"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+</RelativeLayout>
